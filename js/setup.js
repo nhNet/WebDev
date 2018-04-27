@@ -59,9 +59,9 @@ function SendCSS(){
 setInterval(function(){srcdoc='<html><head><style>'+css+'</style></head><body>'+html+'<script>'+javascript+'</script></body></html>';document.getElementById("copyBox").value=srcdoc;},500);
 setInterval(Checkforsave,500);
 function Checkforsave(){
-    if(activeHTML===true && html!=document.getElementById("code").innerHTML){document.getElementById("nameResults").innerHTML='Result - Not saved<button disabled="true" id="Clipboard">Copy my text</button>';}
-    if(activeJavaScript===true && javascript!=document.getElementById("code").innerHTML){document.getElementById("nameResults").innerHTML='Result - Not saved<button disabled="true" id="Clipboard">Copy my text</button>';}
-    if(activeCSS===true && css!=document.getElementById("code").innerHTML){document.getElementById("nameResults").innerHTML='Result - Not saved<button disabled="true" id="Clipboard">Copy my text</button>';}
+    if(activeHTML===true && html!=document.getElementById("code").innerHTML){document.getElementById("nameResults").innerHTML='Result - HTML Not saved<button disabled="true" id="Clipboard">Copy my text</button>';}
+    if(activeJavaScript===true && javascript!=document.getElementById("code").innerHTML){document.getElementById("nameResults").innerHTML='Result - JavaScript Not saved<button disabled="true" id="Clipboard">Copy my text</button>';}
+    if(activeCSS===true && css!=document.getElementById("code").innerHTML){document.getElementById("nameResults").innerHTML='Result - CSS Not saved<button disabled="true" id="Clipboard">Copy my text</button>';}
     if (document.getElementById("nameHTML").style.background=="red"){activeHTML=true;activeJavaScript=false;activeCSS=false;}
     if (document.getElementById("nameJavaScript").style.background=="blue"){activeHTML=false;activeJavaScript=true;activeCSS=false;}
     if (document.getElementById("nameCSS").style.background=="green"){activeHTML=false;activeJavaScript=false;activeCSS=true;}
