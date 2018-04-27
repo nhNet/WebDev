@@ -39,21 +39,21 @@ function SendHTML(){
     html=document.getElementById("code").innerHTML;
     srcdoc='<html><head><style>'+css+'</style></head><body>'+html+'<script>'+javascript+'</script></body></html>';
     document.getElementById("copyBox").value = srcdoc;
-    document.getElementById("nameResults").innerHTML='Result - Saved locally <button  id="Clipboard">Copy my text</button>';
+    document.getElementById("nameResults").innerHTML='Result - HTML Saved locally <button  id="Clipboard">Copy my text</button>';
     var results=document.getElementById("Results");results.innerHTML='<iframe style="border:5px solid black;width:100%;height:96.4%;" id="Result" srcdoc="'+srcdoc+'" frameborder="0" name="resultBox"></iframe>';
 }
 function SendJavaScript(){
     javascript=document.getElementById("code").innerHTML;
     srcdoc='<html><head><style>'+css+'</style></head><body>'+html+'<script>'+javascript+'</script></body></html>';
     document.getElementById("copyBox").value = srcdoc;
-    document.getElementById("nameResults").innerHTML='Result - Saved locally <button  id="Clipboard">Copy my text</button>';
+    document.getElementById("nameResults").innerHTML='Result - JavaScript Saved locally <button  id="Clipboard">Copy my text</button>';
     var results=document.getElementById("Results");results.innerHTML='<iframe style="border:5px solid black;width:100%;height:96.4%;" id="Result" srcdoc="'+srcdoc+'" frameborder="0" name="resultBox"></iframe>';
 }
 function SendCSS(){
     css=document.getElementById("code").innerHTML;
     srcdoc='<html><head><style>'+css+'</style></head><body>'+html+'<script>'+javascript+'</script></body></html>';
     document.getElementById("copyBox").value = srcdoc;
-    document.getElementById("nameResults").innerHTML='Result - Saved locally <button  id="Clipboard">Copy my text</button>';
+    document.getElementById("nameResults").innerHTML='Result - CSS Saved locally <button  id="Clipboard">Copy my text</button>';
     var results=document.getElementById("Results");results.innerHTML='<iframe style="border:5px solid black;width:100%;height:96.4%;" id="Result" srcdoc="'+srcdoc+'" frameborder="0" name="resultBox"></iframe>';
 }
 setInterval(function(){srcdoc='<html><head><style>'+css+'</style></head><body>'+html+'<script>'+javascript+'</script></body></html>';document.getElementById("copyBox").value=srcdoc;},500);
